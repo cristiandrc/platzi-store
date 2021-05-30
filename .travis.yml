@@ -14,6 +14,19 @@ git: #los 3 niveles de profundidad del proyecto
 script:
   - yarn build
 
+notifications: #configuracion para la notificacion de los procesos 
+  email:
+    recipients:
+      - crisdarroca@hotmail.com
+    # - pepe@gmail.com  
+
+    on_success: always #notificar cuando funcione :)
+    on_failire: allway #Notificar fuando falle :(
+
+
+
+
+
 deploy:
   provider: pages
   skip_cleanup: true
@@ -24,3 +37,5 @@ deploy:
   commit_message: "deploy del proyecto"
   on:
     branch: master
+
+
