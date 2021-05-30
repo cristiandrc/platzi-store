@@ -12,7 +12,7 @@ git: #los 3 niveles de profundidad del proyecto
   depth: 3
 
 script:
-  - year build
+  - yarn build
 
 deploy:
   provider: pages
